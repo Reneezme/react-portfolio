@@ -12,7 +12,7 @@ import { useTypewriter, Cursor, TypewriterHelper} from 'react-simple-typewriter'
 
 export function Hero() {
 
-  const name: [string, TypewriterHelper] = useTypewriter({
+  const [name, helperType]: [string, TypewriterHelper] = useTypewriter({
     words: ['za Farras', 'neezme', 'zafarz'],
     loop: true,
     typeSpeed: 120,
@@ -26,9 +26,9 @@ export function Hero() {
           <h2>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</h2>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Reza {' '}
+          <h1>Re
             <span style={{fontWeight: 'bold', color: 'green'}}>
-              Farras
+              {name}
             </span>
             <span style={{color: 'green'}}>
               <Cursor cursorStyle='<'/>
