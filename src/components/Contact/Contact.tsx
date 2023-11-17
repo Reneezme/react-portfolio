@@ -18,8 +18,8 @@ export function Contact(){
           <a href="mailto:rezafarrass@gmail.com">Gmail</a>
         </div>
         <div>
-        <a href="tel:+919630576848"><img src={phoneIcon} alt="Phone No" /></a>
-          <a href="tel:+919630576848">(+62) It's kinda sensitive!</a>
+        <a href="mailto:rezafarrass@gmail.com"><img src={phoneIcon} alt="Phone No" /></a>
+          <a href="mailto:rezafarrass@gmail.com">(+62) It's kinda sensitive!</a>
         </div>  
       </div>
       <Form></Form>
