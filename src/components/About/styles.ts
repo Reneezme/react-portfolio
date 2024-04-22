@@ -45,24 +45,25 @@ export const Container = styled.section`
   
   
 
-  .about-image{
+  .about-image {
     display: block;
-    margin-left: 300px;
+    margin: 0 auto;
     text-align: center;
     overflow: hidden;
-    width: 350px;
-    height: 500px;
-    img{
-     width: 100%;
-     height: auto;
-     filter: grayscale(0);
-     margin-left: auto;
-     margin-right: 0;
-     transition: filter 0.5s;
-     &:hover{
-       filter: grayscale(0);
-     }
-   }
+    max-width: 350px;
+    height: auto;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(0);
+    transition: transform 0.7s, filter 0.5s, opacity 0.5s;;
+  }
+  
+  .about-image img:hover {
+    filter: grayscale(1);
+    transform: scale(1.1);
   }
 
   @media only screen and (max-width: 480px) {

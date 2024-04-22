@@ -5,8 +5,6 @@ import { About } from "../About/About";
 import { Contact } from "../Contact/Contact";
 import { Project } from "../Project/Project";
 
-
-
 import go from "../../assets/golang-1.svg";
 import mysql from "../../assets/mysql-logo.svg";
 import postgre from "../../assets/postgresql.svg";
@@ -181,11 +179,6 @@ export function Main() {
                   "width": 20,
                   "height": 20
                 },
-                // {
-                //   "src": mysqlIcon,
-                //   "width": 20,
-                //   "height": 20
-                // },
                 {
                   "src": docker,
                   "width": 20,

@@ -17,6 +17,18 @@ export const Container = styled.header`
   width: 100vw;
   z-index: 1000;
 
+  .left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .item {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px;
+  }
+
   nav{
     display: flex;
     align-items: center;
@@ -88,6 +100,10 @@ export const Container = styled.header`
     transition: .6s;
   }
 
+  .button-side {
+    display: block;
+    padding: 0.4rem 1rem;
+  }
 
   input[type=checkbox] {
     height: 0;
