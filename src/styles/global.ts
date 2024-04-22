@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
       header.header-fixed{
         transition: 0.5s;
         background-color: #f5f5f550;
-        a{
+        a,  .button-side{
           transition: 0.5s;
           color: black;
         }

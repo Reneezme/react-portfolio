@@ -1,18 +1,23 @@
 import React from 'react'
 import { useEffect } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { GlobalStyle } from './styles/global'
 import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Main } from './components/Main/Main'
-import { GlobalStyle } from './styles/global'
+import { Sidebar } from "./components/Algorithm/Algorithm";
 import 'react-toastify/dist/ReactToastify.css'
-function App() {
+
+function App(): JSX.Element {
   return (
-    <>
-      <GlobalStyle></GlobalStyle>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Main />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   )
 }
 
